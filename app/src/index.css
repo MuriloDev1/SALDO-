@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+:root {
+  --main-background: #12161d;
+}
+
+body {
+  background-color: var(--main-background);
+}
+
+/* No seu CSS global */
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
