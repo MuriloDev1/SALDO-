@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Plus } from "lucide-react";
 
 const categorias = [
@@ -47,7 +47,7 @@ const Transactions = () => {
     <section className="max-w-5xl mx-auto p-6">
       <div className="flex gap-5 mx-5">
         <h2 className="text-3xl mb-4">Transações</h2>
-        <button id="addTransactions" className="mb-4 bg-[#28C76F] rounded-full p-2 text-white cursor-pointer hover:opacity-50 transition">
+        <button className="mb-4 bg-[#28C76F] rounded-full p-2 text-white cursor-pointer hover:opacity-50 transition">
           <Plus />
         </button>
       </div>

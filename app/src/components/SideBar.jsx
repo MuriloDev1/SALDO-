@@ -7,6 +7,8 @@ import {
   ChevronDown,
 } from "lucide-react";
 
+import { Link } from "react-router-dom";
+
 export default function Sidebar() {
   return (
     <aside className="w-80 bg-gray-800 text-white p-6 hidden md:block">
@@ -25,26 +27,41 @@ export default function Sidebar() {
       </section>
 
       <nav className="flex flex-col space-y-2">
-        <a href="#" className="text-xl flex hover:bg-gray-700 p-2 gap-2 rounded">
+        <Link
+          to="/dashboard"
+          className="text-xl flex hover:bg-gray-700 p-2 gap-2 rounded"
+        >
           <LayoutDashboard className="text-gray-400 w-10" />
           Dashboard
-        </a>
-        <a href="#" className="text-xl flex hover:bg-gray-700 p-2 gap-2 rounded">
+        </Link>
+        <Link
+          to="/transactions"
+          className="text-xl flex hover:bg-gray-700 p-2 gap-2 rounded"
+        >
           <ArrowUpDown className="text-gray-400 w-10" />
           Transações
-        </a>
-        <a href="#" className="text-xl flex hover:bg-gray-700 p-2 gap-2 rounded">
+        </Link>
+        <Link
+          to="/goals"
+          className="text-xl flex hover:bg-gray-700 p-2 gap-2 rounded"
+        >
           <Target className="text-gray-400 w-10" />
           Metas
-        </a>
-        <a href="#" className="text-xl flex hover:bg-gray-700 p-2 gap-2 rounded">
+        </Link>
+        <Link
+          to="/modal"
+          className="text-xl flex hover:bg-gray-700 p-2 gap-2 rounded"
+        >
           <CreditCard className="text-gray-400 w-10" />
           Cartões
-        </a>
-        <a href="#" className="text-xl flex hover:bg-gray-700 p-2 gap-2 rounded">
+        </Link>
+        <Link
+          to="/"
+          className="text-xl flex hover:bg-gray-700 p-2 gap-2 rounded"
+        >
           <Settings className="text-gray-400 w-10" />
           Configurações
-        </a>
+        </Link>
       </nav>
     </aside>
   );

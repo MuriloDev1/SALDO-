@@ -8,7 +8,7 @@ const BalanceCard = () => {
       <EditableBalance/>
 
       {/* Income */}
-      <div className="bg-[#12161D] px-6 py-2 gap-4 rounded-lg text-xl flex">
+      <div className="bg-[#12161D] px-6 py-4 gap-4 rounded-lg text-xl flex">
         <span>Renda</span>
         <span className="text-green-500 font-semibold">R$ 5.000</span>
         <span>Gastos</span>

@@ -22,7 +22,7 @@ const data = [
 
 const ExpensesChart = () => {
   return (
-    <div className="max-w-5xl mx-auto px-4 mt-8 mb-25">
+    <div className="max-w-5xl mx-auto px-4 mt-10 mb-25">
       <div className="w-full h-100 rounded-xl">
         <h2 className="text-3xl pl-7 mb-8">Gastos por Dia</h2>
         <ResponsiveContainer width="100%" height="100%">
